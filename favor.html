@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <title>ゲームマスターになるために必要なこと</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sanitize.css/2.0.0/sanitize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./syntaxhighlighter/scripts/shCore.js" type="text/javascript"></script>
+    <script src="./syntaxhighlighter/scripts/shBrushPlain.js" type="text/javascript"></script>
+    <script src="./syntaxhighlighter/scripts/shBrushCpp_kai.js" type="text/javascript"></script>
+    <link href="./syntaxhighlighter/styles/shCore.css" rel="stylesheet" type="text/css">
+    <link href="./syntaxhighlighter/styles/shThemeMidnight_likeVS.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+        SyntaxHighlighter.all();
+    </script>
+</head>
+<body link="#0080ff" vlink="#ff00ff" alink="ff0080">
+    <h1>ゲームマスターになるために必要なこと</h1>
+    <section>
+        <h2>MarkdownViewのダウンロード</h2>
+        <p><a href="./download/common/MarkdownView-0.0.4.zip">こちら</a>からダウンロードできます。</p>
+    </section>
+    <section>
+        <h2><font color="#009500">はじめに</font></h2>
+        <h3>分からないことがあった時の連絡先</h3>
+        <p>
+            LINEまたは下記連絡先へ<br>
+            Yahoo!　kamesan1406@yahoo.co.jp<br>
+            GMail　aimegu2014@gmail.com<br>
+            Skype　kamiodamaasto2014<br>
+        </p>
+        <h3>Skypeの連絡可能時間帯</h3>
+        <p>
+            その日その日で違うので、ログイン状況を確認したうえでお願いします。
+        </p>
+        <h3>メールの時の注意</h3>
+        <p>
+            必ず件名に鬼斬またはLINEの名前を入れてください。ない場合は迷惑メールとして処理してしまう可能性があります。
+        </p>
+        <h3>準備するにあたって</h3>
+        <p>
+            上から順番にやってください。順番通りにやらなかった場合、どうなっても知りません。
+        </p>
+    </section>
+    <hr>
+    <section>
+        <h2><font color="#009500">全員共通</font></h2>
+        <p>
+            編集の競合を防ぐためおよび必要ファイルを読むために必要なことです。<br>
+            この部分の作業をやらない場合、ゲームマスターになることを認めません。<br>
+        </p>
+        <ul>
+            <li>
+                <a href="https://github.com/">GitHub</a>に登録。できれば分かりやすい名前にしてほしい。<br>
+                ※<a href="https://github.com/AinoMegumi">このアカウント</a>をフォローしておくといいかもしれません。<br>
+                　注)<a href="https://github.com/KamiodaMasato">このアカウント</a>はHTMLのアップロード用アカウントです。(サーバーが決まるまで)
+            </li>
+            <li>
+                <a href="./download/common/SourceTree.zip">SourceTree</a>をダウンロード・インストール
+            </li>
+            <li>
+                SourceTreeにGitHubのアカウントを登録<br>
+                ※ここまでやったらプロジェクトをダウンロードできるようにするので連絡ください。
+            </li>
+            <li>
+                <a href="https://github.com/AinoMegumi/LINE_Member_Projects"> GitHub</a>からプロジェクトをダウンロード<br>
+                ※項目１のGitHubとこの項目のGitHubは飛ぶ先のURLが違うので注意
+            </li>
+            <li>
+                SourceTreeにプロジェクトフォルダを登録
+            </li>
+            <li>
+                <a href="./download/common/MKEditor.zip">MKEditor</a>をダウンロード<br>
+                ※.mdファイルを編集する時に必要になります。
+            </li>
+        </ul>
+        <p>
+            自分でやるのが面倒、よく分からないから代わりにやってという人は<a href="./download/TeamViewer.zip">こちら</a>をダウンロードし、アプリケーションに下の情報を登録して連絡してください。<br>
+            ＰＣをリモート操作してやることをやってしまいます。<br>
+            その際は必ずインターネットに接続しておいてください。繋がってないとできません。<br>
+        </p>
+    </section>
+    <hr>
+    <section>
+        <h2><font color="#009500">ゲームプログラマーをやる人</font></h2>
+        <p>
+            使用しているライブラリの関係上、Visual Studioが必要になるので、ＣＰＵとＲＡＭを確認し、ＣＰＵはIntel Core i5以上のものかつ8.00GB以上のＲＡＭを積んでる人だけにしてください。<br>
+            ＣＰＵはCeleronやCore(TM)2 Duo等、ＲＡＭは8.00GB未満でもできないことはないけど、固まっても責任取れないです。
+        </p>
+        <ul>
+            <li>
+                Ｃ直下にlibというフォルダを作ってください。
+            </li>
+            <li>
+                Visual Studio Community 2013をインストール<br>
+                ※初期状態は英語なので、日本語に変えたい場合は言語パックもインストール
+                ※基本的にＣ＋＋でやりますが、Javaを使う時は別途通知するので
+                <ul>
+                    <li>
+                        <a href="https://netbeans.org/downloads/">NetBeans</a>のダウンロード(EclipseでもOK)
+                    </li>
+                    <li>
+                        <a href="http://javadl.sun.com/webapps/download/AutoDL?BundleId=106279">Javaアップデート</a>(2014.04.18現在最新のもの)
+                    </li>
+                    <li>
+                        <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">JDK</a>のダウンロード<br>
+                        ※ダウンロードする際は、自分のＰＣのＯＳを確認し、そのＯＳに対応したものをダウンロードしてください。
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Googleドライブに上がっているフォルダを下記フォルダへ<br>
+                DxLib_VC→C:\lib　Visual Studio 2013→C:\Users\(ユーザー名)\Documents<br>
+                簡単に言うと、DxLib_VCはＣ直下に作ってもらったフォルダ「lib」に、Visual Studio 2013は自分のユーザーフォルダのマイドキュメントに<br>
+                ※このライブラリのリファレンスおよびサンプルコードは<a href="http://homepage2.nifty.com/natupaji/DxLib/dxfunc.html">こちら</a>を参照
+            </li>
+        </ul>
+    </section>
+    <hr>
+    <section>
+        <h2><font color="#009500">グラフィックデザイナーをやる人</font></h2>
+        <p>
+            グラフィックデザイナーをやりたい人は、自分の使いやすいグラフィック作成ソフト(mspaint.exe(Windows初期搭載のペイントソフト)含む)を使用してください。<br>
+            ただし、ファイルは必ず.pngで保存してください。.jpgで保存されても、時間の経過とともに画質が低下するのでプレイヤーだけでなくゲームマスターも不快なだけです。<br>
+        </p>
+    </section>
+    <hr>
+    <section>
+        <h2><font color="#009500">作曲をやる人</font></h2>
+        <p>
+            ソフトウェア・保存拡張子はフリーです。もしゲームに曲を入れる時に保存した拡張子だと使えないという場合は、プログラマーがエンコードします。
+        </p>
+    </section>
+    <hr>
+    <section>
+        <h2><font color="#009500">シナリオを書く人</font></h2>
+        <p>
+            Wordでシナリオを書いてください。古いWordを使ってる人でも読めるよう、拡張子は.docでお願いします。<br>
+            また、キャラクター設定もやってもらいます。表型にしたい場合はExcelの使用も認めますが、その場合は古いExcelを使ってる人でも読めるよう、.xlsで保存してください。
+        </p>
+    </section>
+    <hr>
+    <section>
+        <h2><font color="#009500">サーバー管理について</font></h2>
+        <p>
+            サーバー管理はゲームプログラマーの仕事になります。
+        </p>
+    </section>
+    <hr>
+    <section>
+        <h2><font color="#009500">運営等について</font></h2>
+        <p>
+            運営等はチーム全員で行います。
+        </p>
+    </section>
+    <hr>
+    <a href="caution.html">注意事項へ</a>
+</body>
+</html>
